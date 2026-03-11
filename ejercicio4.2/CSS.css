@@ -1,0 +1,148 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+img, iframe {
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: darkblue;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#logo img {
+    height: 50px;
+}
+
+#logo span {
+    color: white;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: yellow;
+}
+
+.boton a {
+    background-color: yellow;
+    color: black;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.boton a:hover {
+    opacity: 0.9;
+}
+
+
+main {
+    margin-top: 100px; 
+    margin-bottom: 120px; 
+    padding: 20px;
+}
+
+.fot, .iframe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 10px 0;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ccc;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    font-size: 14px;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+.footer-col {
+    flex: 1;
+    padding: 0 10px;
+}
+
+footer input, footer textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    #logo img {
+        height: 40px;
+    }
+
+    .menu a {
+        font-size: 14px;
+    }
+
+    main {
+        margin-top: 150px; 
+        margin-bottom: 20px;
+    }
+
+    footer {
+        position: static;
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .footer-col {
+        padding: 10px 0;
+    }
+}
